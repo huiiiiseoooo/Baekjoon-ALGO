@@ -4,7 +4,6 @@ public class Main {
     static int[] temp;
 
     public static void main(String[] args) throws IOException {
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int[] arr = new int[n];
@@ -14,9 +13,7 @@ public class Main {
             arr[i] = Integer.parseInt(br.readLine());
         }
 
-
         mergeSort(arr, 0, n - 1);
-
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         for(int i = 0; i < n; i++) {
